@@ -12,7 +12,7 @@ node {
       // Get some code from a GitHub repository
     try{
 
-      sh 'sudo apt-get install --no-act unzip'
+      sh 'echo "hello"'
 
     }
     catch (err){
