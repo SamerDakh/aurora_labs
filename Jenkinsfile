@@ -1,6 +1,5 @@
 
 node {
-
    stage('setup') {
 
       // Get some code from a GitHub repository
@@ -18,5 +17,5 @@ node {
    stage('end') {
      echo "Success"
      }
- }
+
 }
