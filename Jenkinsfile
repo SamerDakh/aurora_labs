@@ -1,6 +1,8 @@
 
 node {
-
+    agent {
+        docker { image 'docker' }
+    }
    stage('setup') {
     try{
 
