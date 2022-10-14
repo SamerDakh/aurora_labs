@@ -9,6 +9,8 @@ services:
      - 8080:8080
      - 50000:50000
     container_name: 'jenkins'
+#    command: bash -c "apt-get update &&  apt install docker.io -y && docker --version && jenkins --version"
+
     volumes:
-      - /home/${myname}/jenkins_compose/jenkins_configuration:/var/jenkins_home
+      - ~/jenkins_compose/jenkins_configuration:/var/jenkins_home
       - /var/run/docker.sock:/var/run/docker.sock
